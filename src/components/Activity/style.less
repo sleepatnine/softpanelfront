@@ -1,0 +1,27 @@
+.activity {
+  &__title {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 28px;
+  }
+
+  &__content > div > div:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.enter {
+  opacity: 0;
+}
+.enterActive {
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+.exit {
+  opacity: 1;
+}
+.exitActive {
+  opacity: 0;
+  transition: opacity 1000ms;
+}

@@ -1,0 +1,57 @@
+.result_progress_bar {
+  display: flex;
+  min-width: 174px;
+  position: relative;
+  height: 7px;
+  border-radius: 5px;
+  background-color: #d2d6dc;
+}
+
+.result_progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  height: 100%;
+
+  &__load_low {
+    background-color: #f44b40;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  &__load_low_plus {
+    background-color: #f38446;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+
+  &__load_medium {
+    background-color: #8BA6CD;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  &__load_medium_plus {
+    background-color: blueviolet;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  &__load_high {
+    background-color: #5ef346;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+}
+
+.percent {
+  margin-left: 10px;
+  margin-bottom: 1px;
+}

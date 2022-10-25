@@ -1,0 +1,68 @@
+.software_card {
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+    padding: 12px;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        background-color: darken(#fff, 10%);
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding-left: 15px;
+    }
+
+    &__name {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    &__status {
+        font-size: 14px;
+        color: #5E5E5E;
+        margin-bottom: 7px;
+        padding-left: 13px;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &_green {
+            &::after {
+                background-color: #40E75B;
+            }
+        }
+
+        &_red {
+            &::after {
+                background-color: #F44040;
+            }
+        }
+
+        &_blue {
+            &::after {
+                background-color: #4047E7;
+            }
+        }
+    }
+
+    &__realise {
+        font-size: 14px;
+        color: #A9A3A3;
+    }
+}

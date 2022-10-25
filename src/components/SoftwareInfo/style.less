@@ -1,0 +1,73 @@
+.software_info {
+
+    &__name {
+        margin-bottom: 64px;
+        font-size: 19px;
+        font-weight: 400;
+
+    }
+
+    &__slider {
+        max-width: 1000px;
+        margin-bottom: 75px;
+    }
+
+    :global(.slick-slide) {
+        transition: .3s;
+        transform: scale(.9);
+        
+        & > div {
+            display: flex;
+        justify-content: center;
+        }
+    }
+
+    :global(.slick-current) {
+        & + div {
+            transform: scale(1);
+        }
+    }
+
+    &__row {
+        display: flex;
+    }
+
+    &__functions {
+        max-width: 1000px;
+    }
+
+    &__funclist {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__func {
+        display: block;
+        padding-left: 19px;
+        position: relative;
+        font-weight: 300;
+        width: 48%;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            width: 7px;
+            height: 7px;
+            background-color: #7F8AD9;
+        }
+    }
+}
+
+.slicks {
+
+    width: 100% !important;
+
+    img {
+        width: 100%;
+    }
+}

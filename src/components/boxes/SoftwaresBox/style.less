@@ -1,0 +1,41 @@
+.softwares_box {
+    display: flex;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+
+    &__head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 34px;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        padding-right: 30px;
+        max-width: 340px;
+        width: 100%;
+        border-right: 1px solid #BFBFBF;
+
+        h3 {
+            font-size: 19px;
+            font-weight: 400;
+        }
+    }
+
+    &__softlist {
+        list-style: none;
+
+        & > li{
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__softinfo {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+    }
+}
